@@ -10,7 +10,6 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import { Typography} from "@material-ui/core";
 import Link from "@material-ui/core/Link";
 
-
 class App extends React.Component{
     state ={
         data: {},
@@ -26,9 +25,8 @@ class App extends React.Component{
     handleCountryChange = async (country) => {
         const fetchedData = await fetchData(country);
         this.setState({ data: fetchedData, country:country });
-
-
     }
+    
     handleChange;
     handleClick;
     render() {
